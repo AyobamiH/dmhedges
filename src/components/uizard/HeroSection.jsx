@@ -60,7 +60,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5 }}
-          className="text-white leading-tight text-4xl md:text-6xl lg:text-7xl"
+          className="text-white mb-20 leading-tight text-4xl md:text-6xl lg:text-7xl"
         >
           Expertise in Hedge Cutting, Ivy Removal, Shrub and Bush Shaping
         </motion.h1>
@@ -71,12 +71,20 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, delay: 0.5 }}
         >
-          <motion.button
+          {/* <motion.button
             whileHover={{ scale: 1.1 }}
             className="mt-8 bg-[#5c7625] text-white hover:bg-white hover:text-[#5c7625] border-4  border-x-white hover:border-[#5c7625] border-y-white font-bold py-3 px-6 rounded-full shadow-lg transition-transform"
           >
             Get a Free Quote
-          </motion.button>
+          </motion.button> */}
+          <motion.a
+              whileHover={{ scale: 1.05 }}
+              href="/contact"
+              className="mt-8 bg-[#5c7625] text-white hover:bg-white hover:text-[#5c7625] border-4  border-x-white hover:border-[#5c7625] border-y-white font-bold py-3 px-6 rounded-full shadow-lg "
+              
+            >
+              Get a Free Quote
+            </motion.a>
           
           
         
